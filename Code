@@ -1,0 +1,42 @@
+# importing random module
+import random    
+
+#creating subjects
+subjects = [ "Shekar Dhawan",
+             "Virat Kohli",
+             "Nirmal Situpathi",
+             "A Mumbai cat",
+             "A Monkey",
+             "South Bombay GIRL"]
+
+actions = [ "lanches",
+           "cancels",
+           "dances with",
+           "orders",
+           "speaks arrogantly",
+           "eats","attends"]
+
+places = [ "at Red Fort", 
+          "in Mumbai Local Train",
+          "a plate of samosa",
+          "inside Parliament",
+          "at Ganga Ghat",
+          "during IPL match"]
+
+#creating headlines
+while True:
+    subject = random.choice(subjects)
+    action = random.choice(actions)
+    place = random.choice(places)
+
+    headline = f"BREAKING NEWS: {subject} {action} {place}"
+    print("\n" + headline)
+
+    user_input = input("\n Do you want another headline? (yes/no)").strip()
+    if user_input == "no":
+               break
+    
+    print("\n Thanks for using Fake News Generator.")
+
+
+
